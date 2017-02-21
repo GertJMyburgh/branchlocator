@@ -49,32 +49,30 @@ h6, .h6 {
  */
 
 @media (min-width: 1200px) {
-  .container {
-    width: 970px;
-
-  }
+    .container {
+        width: 970px;
+    }
 }
-
 
 /* MASTHEADS FOR TOP ELEMENTS */
-
 .home-masthead {
- 	 background-color: #694f7a;
-	  min-height: 30px; 
-
+    background-color: #694f7a;
+    min-height: 30px; 
 }
+
 .home-main {
     position: relative;
     width: 100%;
-	margin: 2px;
-	padding-top: 2px;
+    margin: 2px;
+    padding-top: 2px;
 }
+
 .home-icon {
     background-color: transparent;
- 	background-image: url(../images/sprite.svg); 
-	background-position: 0 -160px;
-	float:right;
- 	background-repeat: no-repeat;
+    background-image: url(../images/sprite.svg); 
+    background-position: 0 -160px;
+    float: right;
+    background-repeat: no-repeat;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
