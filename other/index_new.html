@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/favicon.ico">
+
+        <title>Hollard Branch Locator</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/main.css" rel="stylesheet">
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <!--TOP MASTHEAD CONTAINING HOME ICON LINKING BACK TO BRANCHES INDEX PG-->
+        <div class="home-masthead">
+            <div class="container">
+                <div class="row">
+                    <nav class="home-main">
+                        <a class="home-icon" href="#">&nbsp;</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!--2ND MASTHEAD CONTAINING HOLLARD LOGO LINKING BACK TO BRANCHES INDEX PG-->
+        <div class="logo-masthead">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-main">
+                        <li class="nav-main__logo">
+                            <a class="logo" href="/">&nbsp;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+
+
+        <div class="container">
+            <!--MAIN CONTENT SECTION ON LEFT INCLUDING BRANCHES SEARCH FORM-->
+
+            <div class="col-lg-10 branch-header branch-title">
+                <h1>Hollard Branch Locator</h1>
+                <h3 class="branch-subheading">Find your nearest Hollard branch:</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 branch-main">
+
+                    <form action="search-results.html" method="POST" class="form-inline">
+                        
+                        <div class="col-lg-5 col-md-5 col-sm-12 form-group form-control-adj">
+                            <select class="form-control input-group branch-form-select" name="provinces">
+                                <option value="SelectYourProvince" selected="">Select Your Province</option>
+                                <option value="WesternCape">Western Cape</option>
+                                <option value="Gauteng">Gauteng</option>
+                                <option value="EasternCape">Eastern Cape</option>
+                                <option value="NorthernCape">Northern Cape</option>
+                                <option value="Limpopo">Limpopo</option>
+                                <option value="FreeState">Free State</option>
+                                <option value="KwaZuluNatal">KwaZulu-Natal</option>
+                                <option value="Mpumalanga">Mpumalanga</option>
+                                <option value="NorthWest">North West</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-12 form-group form-control-adj">                    
+                            <select class="form-control input-group branch-form-select" name="cities">
+                                <option value="SelectYourCity" selected="">Select Your City</option>
+                                <option value="CapeTown">Cape Town</option>
+                                <option value="Pretoria">Pretoria</option>
+                                <option value="Durban">Durban</option>
+                                <option value="Johannesburg">Johannesburg</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 form-group branch-form">            
+                            <input type="submit" class="btn branch-form-btn" id="submit" value="SEARCH"/>                       
+                        </div>
+                        
+                    </form> <!--END OF SEARCH FORM-->
+
+                </div>
+
+                <!--RIGHT SIDEBAR INCLUDING CALL-BACK FORM-->
+                <div class="col-sm-4 col-sm-offset-2 branch-sidebar">
+                    <div class="sidebar-module sidebar-module-inset sidebar">
+                        <h2>Rather call me back please</h2>
+                        <form action="" method="">
+                            <div class="form-group">
+                                <!--<label for="name">Name</label>-->
+                                <input type="text" class="form-control" id="name" value="Name*" />
+                            </div>
+                            <div class="form-group">                    
+                                <!--<label for="email">Email</label>-->
+                                <input type="text" class="form-control" id="phoneNumber" value="Contact Number*" />    
+                            </div>
+                            <div class="form-group">                    
+                                <select class="form-control input-group sidebar-form sidebar-caret" name="products">
+                                    <option value="Select City" selected="" class="sidebar-select">Select a product</option>
+                                    <option value="" class="sidebar-options">Car Insurance</option>
+                                    <option value="" class="sidebar-options">Home Insurance</option>
+                                </select>
+                            </div>                
+                            <div class="form-group">            
+                                <input type="submit" class=" sidebar-btn" id="submit" value="CALL ME BACK"/>                       
+                            </div>
+                        </form>            
+                    </div>
+
+                    <!--HOLLARD CALL DIRECT NUMBER-->
+                    <div class="sidebar-module">
+                        <h3 class="universal-number">Or call us: 0800 601 016</h3>
+                    </div>
+
+                </div><!-- /.branch-sidebar -->
+
+            </div><!-- /.row -->
+
+        </div><!-- /.container -->
+
+        <!--FOOTER-->
+        <footer class="branch-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-push-8 branch-footer-social">
+                        <ul class="nav-social">
+                            <li class="nav-social--facebook">
+                                <a href="https://www.facebook.com/HollardInsurance" target="_blank"><i class="icon--facebook">&nbsp;</i></a></li>
+                            <li class="nav-social--linkedin">
+                                <a href="http://www.linkedin.com/company/12696?trk=cws-btn-overview-0-0" target="_blank"><i class="icon--linkedin">&nbsp;</i></a></li>
+                            <li class="nav-social--twitter">
+                                <a href="https://twitter.com/hollard" target="_blank"><i class="icon--twitter">&nbsp;</i></a></li>                    
+                            <li class="nav-social--googleplus">
+                                <a href="https://plus.google.com/u/0/+HollardInsurance" target="_blank"><i class="icon--googleplus">&nbsp;</i></a></li>                    
+                            <li class="nav-social--instagram">
+                                <a href="http://instagram.com/hollardgram?ref=badge" target="_blank"><i class="icon--instagram">&nbsp;</i></a></li>                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <p>The Hollard Insurance Company Ltd (Reg No. 1952/003004/06) is an authorised Financial Services Provider, and a member of the South African Insurance Association (SAIA).<br>
+                        Hollard Life Assurance Company (Reg. No. 1993/001405/06) is an authorised Financial Services Provider and a member of the Association for Savings and Investment South Africa (ASISA).<br> 
+                        Hollard Investment Managers (Reg. No. 1997/001696/07) is an authorised Financial Services Provider, operates as an investment manager and is a member of the Association for Savings and Investment South Africa (ASISA).<br>
+                        <br>
+                        Hollard is committed to high ethical standards of business. Hollard subscribes to the Ombudsman for Short-Term Insurance and the Ombudsman for Long-Term Insurance, and is subject to the jurisdiction of the FAIS Ombud. <br>
+                        <br>
+                        Hollard has developed and publicises its own Financial Crime Risk Management Policy as well as policies in support of the aims of the 
+                        Anti Money-Laundering Act and the Corrupt Activities Act.
+                    </p>
+                    <p>
+                        &copy; Copyright 2016 Hollard 
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>

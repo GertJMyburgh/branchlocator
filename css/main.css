@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ * Globals
+ */
+@font-face {
+    font-family: 'AntartidaRounded-Bold';
+    src: url('../fonts/AntartidaRounded-Bold.ttf');
+}
+@font-face {
+    font-family: 'AntartidaRounded-Medium';
+    src: url('../fonts/AntartidaRounded-Medium.ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'SourceSansPro-Regular', Verdana, Geneva, sans-serif;
+  color: #666;
+  margin-bottom: 0 !important;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  font-family: 'AntartidaRounded-Bold';
+  font-weight: normal;
+  color: #442359;
+}
+
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: 'AntartidaRounded-Medium';
+  font-weight: normal;
+  color: #442359;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+
+  }
+}
+
+
+/* MASTHEADS FOR TOP ELEMENTS */
+
+.home-masthead {
+ 	 background-color: #694f7a;
+	  min-height: 30px; 
+
+}
+.home-main {
+    position: relative;
+    width: 100%;
+	margin: 2px;
+	padding-top: 2px;
+}
+.home-icon {
+    background-color: transparent;
+ 	background-image: url(../images/sprite.svg); 
+	background-position: 0 -160px;
+	float:right;
+ 	background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;	
+    color: transparent;
+    height: 20px;
+    width: 20px;
+
+}
+
+
+.logo-masthead {
+    background-color: #442659;
+	min-height: 65px;
+  /*-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1); */
+}
+
+.nav-main {
+    position: relative;
+    width: 100%;
+}
+
+nav ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-main__logo {
+    float: left;
+    padding: 10px 0 10px 0;
+	width: 20%;
+	margin: 2px;
+    list-style: none;
+}
+.logo {
+    background-color: transparent;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    color: transparent;
+    height: 40px;
+    width: 140px;
+	left: 0;
+}
+
+/*MAIN CONTENTS AREA ON LEFT*/
+
+.branch-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.branch-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.branch-subheading {
+	color: #666;
+	font-size: 19px;
+}
+.branch-form {
+}
+.branch-form-btn {
+  font-family: 'AntartidaRounded-Medium';
+  display: inline-block;
+  padding: 12px 15px;
+  margin-bottom: 0;
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #442359;
+  border: none;
+  border-radius: 9px;
+}
+.branch-form-btn:hover {
+	color: #E64E00;	
+}
+.branch-form-select {
+	min-width: 260px;
+	max-width: 100%;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+
+/*..SEARCH RESULTS LIST OF BRANCHES */
+
+.search-results {
+	padding-bottom: 20px;
+}
+.search-results-header {
+	margin: 20px 0;
+}
+.search-results-branchname {
+	color: #44B4A6;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.search-results-list {
+	margin-bottom: 0;
+}
+.search-results-maplink {
+	color: #44B4A6;
+	font-weight: bold;
+	text-decoration:underline;
+}
+
+/* ..SEARCH RESULTS - MAP AND BRANCH DETAILS */
+
+.map-sizer {
+	width: 100%;
+	height: 300px;
+	background-color: #aaa;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+.map-form-btn {
+  font-family: 'AntartidaRounded-Medium';
+  display: inline-block;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #442359;
+  border: none;
+  border-radius: 9px;
+}
+.map-form-btn:hover {
+	color: #E64E00;	
+}
+
+
+/* RIGHT SIDEBAR LAYOUT */
+
+/*.branch-main {
+  font-size: 18px;
+  line-height: 1.5;
+}*/
+
+/* ..ORANGE CALL-BACK FORM */
+.sidebar-module {
+  padding: 10px;
+  margin: 0 -15px 10px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #E64E00;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+.sidebar {
+	margin-top: 3;
+	font-family: Verdana, Geneva, sans-serif;
+ 	font-weight: normal;
+	color: #ADADAD;		
+}
+.sidebar h2 {
+	color: #FFF;
+	font-size: 28px;
+	font-weight: lighter;
+	padding-bottom: 10px;
+}
+.sidebar-form {
+	background-color: #eb7133;
+	border: none;
+}
+.sidebar-select {
+    font-size: 1em;
+}
+.sidebar-options {
+	font-size: small;
+}
+.sidebar-caret {
+  color: #fff;
+}
+.sidebar-btn{
+  font-family: 'AntartidaRounded-Medium';
+  display: inline-block;
+  padding: 8px 15px;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 1.35em;
+  color: #fff;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #ff6f40;
+  border: 3px solid #fff;
+  border-radius: 9px;
+}
+.sidebar-btn:hover {
+	background-color: #fe8057;
+}
+.universal-number{
+	color: #E64E00;
+	font-weight: bold;
+	text-align:center;
+}
+.universal-number-thankyou{
+	color: #E64E00;
+	font-weight: bold;
+	text-align:left;
+}
+
+/* FOOTER*/
+
+.branch-footer {
+	padding: 40px 0;
+	color: #dadada;
+	text-align: left;
+	background-color: #442359;
+	height: auto !important;
+	height: 100%;
+
+	font-size: 0.8em;	 
+}
+.branch-footer p {
+	padding-top: 20px;
+
+}
+.branch-footer p:last-child {
+	padding-top: 10px;
+	margin-bottom: 10% !important;
+	font-size: 0.77em;
+}
+
+/*..SOCIAL MEDIA ELEMENTS IN FOOTER*/
+
+nav-social {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	height: 40px;
+}
+.nav-social li {
+    list-style: none;
+	display: list-item;
+}
+.nav-social--facebook, .nav-social--googleplus, .nav-social--instagram, .nav-social--linkedin, .nav-social--twitter {
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    padding-top:0;	
+}
+.icon--facebook {
+    background-color: transparent;
+ 	background-image: url(../images/sprite.svg); 
+ 	background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;	
+    color: transparent;	
+    height: 32px;
+    width: 32px;
+    background-position: -40px -80px;
+}
+.icon--linkedin {
+    background-color: transparent;
+ 	background-image: url(../images/sprite.svg); 	
+	 	background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;	
+    color: transparent;			
+    height: 32px;
+    width: 32px;
+    background-position: -160px -80px;
+}
+.icon--twitter {
+    background-color: transparent;
+ 	background-image: url(../images/sprite.svg); 
+ 	background-repeat: no-repeat;	
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;	
+    color: transparent;			
+    height: 32px;
+    width: 32px;
+    background-position: 0 -80px;
+}
+.icon--googleplus {
+    background-color: transparent;
+ 	background-image: url(../images/sprite.svg); 
+ 	background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;	
+    color: transparent;				
+    height: 32px;
+    width: 32px;
+    background-position: -80px -80px;
+}
+.icon--instagram {
+    background-color: transparent;
+ 	background-image: url(../images/sprite.svg); 	
+ 	background-repeat: no-repeat;	
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;	
+    color: transparent;		
+    height: 32px;
+    width: 32px;
+    background-position: -120px -80px;
+}
+
