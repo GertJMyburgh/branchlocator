@@ -14,14 +14,16 @@ date_default_timezone_set("Africa/Johannesburg");
 $log_datetime = date('Y-m-d H:i:s');
 
 // TABLE = hollard_branches
-// FIELD2 = province
-// FIELD3 = city
-// FIELD4 = branch
-// FIELD5 = manager
-// FIELD6 = latitude
-// FIELD7 = longitute
-// FIELD8 = address
-// FIELD9 = mapurl
+// FIELD1  = id
+// FIELD2  = province
+// FIELD3  = city
+// FIELD4  = branch
+// FIELD5  = type (Boxer or normal)
+// FIELD6  = manager
+// FIELD7  = latitude
+// FIELD8  = longitute
+// FIELD9  = address
+// FIELD10 = mapurl
 
 class Branch_api {
 
@@ -107,7 +109,7 @@ class Branch_api {
         }
 
         try {
-            $stmt = $pdo->prepare("SELECT branch, manager, address, mapurl FROM hollard_branches WHERE province=:province AND city=:city");
+            $stmt = $pdo->prepare("SELECT branch, type, manager, address, mapurl FROM hollard_branches WHERE province=:province AND city=:city");
             $stmt->bindValue(':province', $province, PDO::PARAM_STR);
             $stmt->bindValue(':city', $city, PDO::PARAM_STR);
             $stmt->execute();

@@ -9,7 +9,7 @@
     $myProvince = "";
     $myCity     = "";
     
-    // Get the branch, manager, address and google mapurl of the selected city belonging to the selected province
+    // Get the branch, type, manager, address and google mapurl of the selected city belonging to the selected province
     if ($_POST) {
         $myProvince     = $_POST['province_placeholder'];
         $myCity         = $_POST['city_placeholder'];
@@ -28,6 +28,7 @@
     }
             
     $displayBranch  = "";
+    $displayType    = "";
     $displayManager = "";
     $displayAddress = "";
     $displayMapURL  = "";
@@ -36,10 +37,11 @@
 
     // Display the info
     foreach ($info as $key => $value) {
-        $displayBranch = $value['branch'];
+        $displayBranch  = $value['branch'];
+        $displayType    = $value['type'];
         $displayManager = $value['manager'];
         $displayAddress = $value['address'];
-        $displayMapURL = $value['mapurl'];
+        $displayMapURL  = $value['mapurl'];
     }
     
 ?>
@@ -420,7 +422,13 @@
                     <div class="col-sm-12 branch-main">
                         <h3 class="search-results-header">Branch Locator Results:</h3>
                         <div class="search-results">
-                            <h4 class="search-results-branchname"><?php print $displayBranch;?></h4>
+                            
+                            <?php if ($displayType == "Normal") { ?>
+                                <h4 class="search-results-branchname"><?php print $displayBranch;?></h4>
+                            <?php } else { ?>
+                                <h4 class="search-results-branchname"><?php print $displayBranch . " ({$displayType})";?></h4>
+                            <?php } ?>
+                            
                             <dl class="search-results-list">
                                 <dt>Address:</dt>
                                 <dd><?php print $displayAddress;?></dd>
