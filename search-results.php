@@ -426,7 +426,7 @@
                             <?php if ($displayType == "Normal") { ?>
                                 <h4 class="search-results-branchname"><?php print $displayBranch;?></h4>
                             <?php } else { ?>
-                                <h4 class="search-results-branchname"><?php print $displayBranch . " ({$displayType})";?></h4>
+                                <h4 class="search-results-branchname"><?php print $displayBranch . " (Inside {$displayType} Store)";?></h4>
                             <?php } ?>
                             
                             <dl class="search-results-list">
