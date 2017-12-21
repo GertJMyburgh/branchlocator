@@ -49,30 +49,33 @@ h6, .h6 {
  */
 
 @media (min-width: 1200px) {
-    .container {
-        width: 970px;
-    }
+  .container {
+    width: 970px;
+
+  }
 }
+
 
 /* MASTHEADS FOR TOP ELEMENTS */
-.home-masthead {
-    background-color: #694f7a;
-    min-height: 30px; 
-}
 
+.home-masthead {
+ 	 background-color: #694f7a;
+	  min-height: 30px; 
+
+}
 .home-main {
     position: relative;
     width: 100%;
-    margin: 2px;
-    padding-top: 2px;
+	margin: 2px;
+	padding-top: 2px;
 }
 
 .home-icon {
     background-color: transparent;
-    background-image: url(../images/sprite.svg); 
-    background-position: 0 -160px;
-    float: right;
-    background-repeat: no-repeat;
+ 	background-image: url(../images/sprite.svg); 
+	background-position: 0 -160px;
+	float:right;
+ 	background-repeat: no-repeat;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
@@ -80,13 +83,27 @@ h6, .h6 {
     color: transparent;
     height: 20px;
     width: 20px;
+
+}
+.funeral-pgr {
+float: right;
+margin-right: 50px;
+	color: #fff;
+	text-decoration: none;
+    height: 20px;
+    width: 20px;
+
+}
+.funeral-pgr:hover {
+	color: #f47b50;
+	text-decoration:none;
 }
 
 .logo-masthead {
     background-color: #442659;
-    min-height: 65px;
-    /*-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-    box-shadow: inset 0 -2px 5px rgba(0,0,0,.1); */
+	min-height: 65px;
+  /*-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1); */
 }
 
 .nav-main {
@@ -104,11 +121,10 @@ nav ul {
 .nav-main__logo {
     float: left;
     padding: 10px 0 10px 0;
-    width: 20%;
-    margin: 2px;
+	width: 20%;
+	margin: 2px;
     list-style: none;
 }
-
 .logo {
     background-color: transparent;
     background-image: url(../images/sprite.svg);
@@ -121,7 +137,7 @@ nav ul {
     color: transparent;
     height: 40px;
     width: 140px;
-    left: 0;
+	left: 0;
 }
 
 .img-page-header {
@@ -133,146 +149,125 @@ nav ul {
 }
 
 @media (min-width: 1025px) {
-    #TOP-BGIMAGE {
-        background-color: transparent;
-        background-image: url(../images/funeral_headerimage.jpg);
+#TOP-BGIMAGE {
+    background-color: transparent;
+    background-image: url(../images/funeral_headerimage.jpg);
 	background-repeat: no-repeat center center;
-	height: 400px;
+	height: 300px;
 	size: cover;
-    }
+}
+
 }
 
 @media (min-width: 569px) and (max-width: 1024px){
-    #TOP-BGIMAGE {
-        background-color: transparent;	
-        background: url(../images/funeral_headerimage.jpg);
+#TOP-BGIMAGE {
+    background-color: transparent;	
+    background: url(../images/funeral_headerimage.jpg);
 	background-repeat: no-repeat center center;	
-	height: 300px;
+	height: 40%;
 	size: cover;
-    }
+}
+
 }
 
 @media all and (max-width: 568px){
-    #TOP-BGIMAGE {
-        background-color: transparent;	
-        background: url(../images/funeral_headerimage.jpg);
-	background-repeat: no-repeat center center;	
-	height: 300px;
-	size: cover;
-    }
+#TOP-BGIMAGE {
+    background-color: transparent;
+}
+
 }
 
 /*MAIN CONTENTS AREA ON LEFT*/
 
 .branch-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  vertical-align:bottom;
 }
-
 .branch-title {
-    margin-top: 30px;
-    margin-bottom: 0;
-    font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: normal;
 }
-
+.funeral-info {
+  font-family: 'AntartidaRounded-Medium';	
+	font-size:15px;
+	line-height: 24px;
+	padding-bottom: 15px;
+}
 .branch-subheading {
-    color: #666;
-    font-size: 19px;
+	color: #44b4a6;
+	font-size: 26px;
 }
-
-.branch-form {
+li. {
+	display: list-item;
 }
-
-.branch-form-btn {
-    font-family: 'AntartidaRounded-Medium';
-    display: inline-block;
-    padding: 12px 15px;
-    margin-bottom: 0;
-    font-size: 1em;
-    color: #fff;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #442359;
-    border: none;
-    border-radius: 9px;
+li.hld-li-tick {
+    background: url(../images/check-purple.svg) no-repeat 0px 8px;
+    font-family: "AntartidaRounded-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    list-style-type: none;
+    margin-left: -40px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 40px;
 }
-
-.branch-form-btn:hover {
-    color: #E64E00;	
-}
-
-.branch-form-select {
-    min-width: 260px;
-    max-width: 100%;
-    background-color: #eee;
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
+.sublist-bullet {
+	font-weight:normal !important;
 }
 
 /*..SEARCH RESULTS LIST OF BRANCHES */
 
 .search-results {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 .search-results-header {
-    margin: 20px 0;
+	margin: 20px 0;
 }
 .search-results-branchname {
-    color: #44B4A6;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 2px;
+	color: #44B4A6;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 2px;
 }
 .search-results-list {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .search-results-maplink {
-    color: #44B4A6;
-    font-weight: bold;
-    text-decoration:underline;
+	color: #44B4A6;
+	font-weight: bold;
+	text-decoration:underline;
 }
 
 /* ..SEARCH RESULTS - MAP AND BRANCH DETAILS */
 
 .map-sizer {
-    width: 100%;
-    height: 300px;
-    background-color: #aaa;
-    margin-bottom: 15px;
-    padding: 10px;
+	width: 100%;
+	height: 300px;
+	background-color: #aaa;
+	margin-bottom: 15px;
+	padding: 10px;
 }
 .map-form-btn {
-    font-family: 'AntartidaRounded-Medium';
-    display: inline-block;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    font-size: 1em;
-    color: #fff;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #442359;
-    border: none;
-    border-radius: 9px;
+  font-family: 'AntartidaRounded-Medium';
+  display: inline-block;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #442359;
+  border: none;
+  border-radius: 9px;
 }
-
 .map-form-btn:hover {
 	color: #E64E00;	
 }
@@ -292,7 +287,7 @@ nav ul {
 }
 .sidebar-module-inset {
   padding: 15px;
-  background-color: #E64E00;
+  background-color: #E9E9E9;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
@@ -300,10 +295,9 @@ nav ul {
   margin-bottom: 0;
 }
 .sidebar {
-	margin-top: 3;
 	font-family: Verdana, Geneva, sans-serif;
  	font-weight: normal;
-	color: #ADADAD;		
+	color: #ADADAD;
 }
 .sidebar h2 {
 	color: #FFF;
@@ -356,11 +350,6 @@ nav ul {
 	text-align:center;
 }
 
-.universal-number-thankyou{
-	color: #E64E00;
-	font-weight: bold;
-	text-align:left;
-}
 
 /* FOOTER*/
 
