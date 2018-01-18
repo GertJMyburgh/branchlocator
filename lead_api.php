@@ -17,6 +17,7 @@ $dateTimeStamp = date('Y-m-d H:i:s');
 // FIELD2 = nameSurname
 // FIELD3 = phoneNumber
 // FIELD4 = product
+// FIELD5 = origin <<== From which form is this request comming?
 
 class Lead_api {
 
@@ -40,8 +41,8 @@ class Lead_api {
         }
     }
     
-    function insertLead($nameSurname, $phoneNumber, $product) {
-        $this->saveLead("hollard_leads", $nameSurname, $phoneNumber, $product);
+    function insertLead($nameSurname, $phoneNumber, $product, $origin) {
+        $this->saveLead("hollard_leads", $nameSurname, $phoneNumber, $product, $origin);
         $this->callURL($nameSurname, $phoneNumber, $product);
     }
 
@@ -72,7 +73,7 @@ class Lead_api {
         return $countDBRecords;
     }
 
-    function saveLead($tableName, $nameSurname, $phoneNumber, $product) {
+    function saveLead($tableName, $nameSurname, $phoneNumber, $product, $origin) {
 
         $dateTimeStamp = date('Y-m-d H:i:s');
 
@@ -85,13 +86,14 @@ class Lead_api {
         }
 
         try {
-            $stmt = $pdo->prepare("INSERT INTO {$tableName}(nameSurname, phoneNumber, product, activeTimeStamp)
-                VALUES(:nameSurname, :phoneNumber, :product, :activeTimeStamp)");
+            $stmt = $pdo->prepare("INSERT INTO {$tableName}(nameSurname, phoneNumber, product, activeTimeStamp, origin)
+                VALUES(:nameSurname, :phoneNumber, :product, :activeTimeStamp, :origin)");
             $stmt->execute(array(
                 "nameSurname" => $nameSurname,
                 "phoneNumber" => $phoneNumber,
                 "product" => $product,
-                "activeTimeStamp" => $dateTimeStamp
+                "activeTimeStamp" => $dateTimeStamp,
+                "origin" => $origin
             ));
 
         } catch (PDOException $e) {

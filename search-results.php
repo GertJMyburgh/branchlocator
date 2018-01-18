@@ -68,6 +68,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/funeral-main.css" rel="stylesheet">
 
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -376,12 +377,12 @@
             // alert ("DD");
         </script>
 
-        <!--TOP MASTHEAD CONTAINING HOME ICON LINKING BACK TO BRANCHES INDEX PG-->
+        <!--TOP MASTHEAD CONTAINING WORD 'Funeral' LINKING TO FUNERAL CALL ME FORM PG-->
         <div class="home-masthead">
             <div class="container">
-                <div class="row">
-                    <nav class="home-main">
-                        <a class="home-icon" href="#">&nbsp;</a>
+                <div class="row">        
+                    <nav class="home-main">			
+                        <a class="home-icon" href="index.php">&nbsp;</a> <a class="funeral-pgr" href="funeral-cover.php">Funeral</a>
                     </nav>
                 </div>
             </div>
@@ -390,10 +391,10 @@
         <!--2ND MASTHEAD CONTAINING HOLLARD LOGO LINKING BACK TO BRANCHES INDEX PG-->
         <div class="logo-masthead">
             <div class="container">
-                <div class="row">
+                <div class="">
                     <ul class="nav-main">
                         <li class="nav-main__logo">
-                            <a class="logo" href="/">&nbsp;</a>
+                            <a class="logo" href="index.php">&nbsp;</a>
                         </li>
                     </ul>
                 </div>
@@ -465,6 +466,8 @@
                             <div class="form-group">            
                                 <input type="submit" class=" sidebar-btn" id="submit" value="CALL ME BACK"/>                       
                             </div>
+                            <!-- Values for 'origin' can be 'FuneralForm' or 'EmbeddedForm'-->
+                            <input type="hidden" name="origin" id="origin" value="EmbeddedForm" />
                         </form>            
                         
                     </div>
